@@ -35,24 +35,24 @@ def main():
  mystr = etree.tostring(tree, pretty_print=True)
 
  # To print one line at a time
- # i=1
- # for line in mystr:
- #  print i , "  " , line
- #  i+=1
+ i=1
+ for line in mystr:
+  print i , "  " , line
+  i+=1
 
  #------------------------------------------------------------------------------
  # Uses parsed html
  #------------------------------------------------------------------------------
 
- parsedhtml = BeautifulSoup(page.content)
+ parsedhtml = BeautifulSoup(page.content, 'html')
 
  # finds specific class name inside html str
 
  # html text
- # print parsedhtml.body.find('td', attrs={'class':'viCellBg2'})
+ print parsedhtml.body.find('td', attrs={'class':'viCellBg2'})
 
  # actual text
- # print parsedhtml.body.find('td', attrs={'class':'viCellBg2'}).text
+ print parsedhtml.body.find('td', attrs={'class':'viCellBg2'}).text
 
  myGames = getGames(mystr)
 

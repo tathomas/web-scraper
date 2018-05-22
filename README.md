@@ -1,1 +1,1 @@
-# web-scraper
+Run using "python scraper.py".
