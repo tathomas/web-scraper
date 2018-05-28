@@ -7,6 +7,8 @@ import requests
 #-------------------------------------------------------------------------------# Method Declarations
 #-------------------------------------------------------------------------------
 
+#This is Richard typing.  I think I'm doing the right thing here
+
 def getGames (text):
  #TODO: Use etree and parsedhtml from below to decipher the html string
  #      The goal is to return a list of Game objects. Create the game objects
